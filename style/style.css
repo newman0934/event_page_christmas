@@ -1,0 +1,270 @@
+/* init */
+*{
+    box-sizing: border-box;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.goto:hover,.go-to:hover{
+    background: #A30014 !important;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100%;
+    background:#2B0E0C;
+    font-family: Arial, Microsoft JhengHei,PingFang, sans-serif;
+    overflow-x: hidden;
+
+}
+
+.wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+
+/* 導覽列區 */
+.navigation{
+    margin-bottom:10rem;
+}
+
+.navigation ul{
+    display:flex;
+    text-align: center;   
+}
+
+.navigation ul li{
+    width:20%;
+    position: relative;
+}
+
+.navigation ul li a{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    transition: all 1s;
+}
+.navigation ul li a h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.navigation ul li:nth-child(odd){
+    bottom:-10rem;
+}
+
+
+/* 產品區 */
+.products-wrap{
+    background: #35703B;
+    border-radius: 90px;
+    border:10px solid #fff;
+    margin-bottom:5rem;
+    padding-bottom:5rem;
+    box-shadow: 0 0 0 20px #35703B;
+}
+
+.limited-time,.coupon{
+    background: url("../images/presents.png") no-repeat bottom,#35703B;
+    background-size: contain;
+}
+
+.products-wrap .product-title{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.products-wrap .products{
+    display: flex;
+    flex-flow:wrap;
+    padding:0 3%;
+}
+
+.product{
+    width:18%;
+    background:#ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding:1rem;
+    margin-bottom:2rem;
+    display:flex;
+    flex-flow:column;
+    margin-left:1.2rem;
+
+}
+
+.product h4{
+    font-size:1.5rem;
+    color:#CE512B;
+
+}
+
+.product ul{
+    text-align: left;
+    font-size: 0.75rem;
+    list-style: disc;
+    line-height: 1.2;
+    padding-left:1rem;
+}
+
+.product .commission{
+    color:#D9001B;
+    font-size:1.25rem;
+    font-weight: 1000;
+    margin-bottom:10px;
+    margin-top:auto;
+}
+
+.product .goto{
+
+    font-size:0.75rem;
+    max-width:100%;
+    line-height: 30px;
+    margin-top: auto;
+    background: #D9001B;
+    color:white;
+    border-radius: 20px;
+    padding: 10px 0;
+
+}
+
+.go-to{
+    width: 33%;
+    font-size:2rem;
+    line-height: 30px;
+    margin-top: auto;
+    background: #D9001B;
+    color:white;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+    border: 6px solid #fff;
+}
+
+/* footer區 */
+footer{
+    text-align: center;
+}
+
+footer img{
+    display: inline-block;
+    max-width: 500px;
+}
+
+
+/* PC版側邊導覽列 */
+.aside-menu{
+    position: fixed;
+    right:0;
+    top:25%;
+    width:3rem;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* 手機板下方導覽列 */
+.aside-menu li a{
+    padding:5px;
+    text-align: center;
+}
+
+.aside-menu li a:hover{
+    color:orange;
+}
+
+.mobile-menu{
+    position:fixed;
+    width:100%;
+    bottom:0;
+    background:rgba(2255,255,255,0.8);
+    display: none;
+}
+
+.mobile-menu ul{
+    display: flex;
+    margin:0;
+}
+
+.mobile-menu ul li{
+    width:20%;
+}
+
+.mobile-menu ul li a{
+    font-weight: 1000;
+    font-size:1.5rem;
+    padding:10px;
+    text-align: center;
+    border:1px solid #aaa;
+    color:#555;
+}
+
+
+@media screen and (max-width:768px){
+
+    .title{
+        font-size:1rem;
+        margin-bottom:5rem;
+    }
+    .navigation{
+        display:none;
+    }
+    
+    .products-wrap{
+        border-radius: 0;
+    }
+
+    .products-wrap h2{
+        font-size:2rem;
+        line-height:70px;
+    }
+
+    .commission{
+        font-size:1rem;
+    }
+
+    .product{
+        width:45%;
+        margin:2%;
+    }
+
+    footer{
+        margin-bottom:100px;
+    }
+
+    footer p{
+        font-size:0.75rem;
+        margin-top:30px;
+    }
+    .aside-menu{
+        display:none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
