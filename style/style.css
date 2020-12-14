@@ -70,15 +70,16 @@ body {
 }
 .navigation ul li a h2 {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-align: center;
-  color: #fff;
+  color: 	#FF6347;
 	pointer-events: none;
-	font-weight: 1000;
-	-webkit-text-stroke: 1px orange;
+  font-weight: bolder;
+  text-shadow: 2px 2px 10px #fff;
+  /*-webkit-text-stroke: 1px	#ffffff;*/
 
 }
 
@@ -96,6 +97,10 @@ body {
   box-shadow: 0 0 0 20px #35703b;
 }
 
+.gps, .ifind {
+  padding-bottom: 1rem;
+}
+
 .limited-time,
 .coupon,
 .christmas-choice {
@@ -105,7 +110,7 @@ body {
 
 .products-wrap .product-title {
   width: 50%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .products-wrap .products {
@@ -117,59 +122,77 @@ body {
 .product {
   width: 18%;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0.4rem;
   margin-bottom: 2rem;
   display: flex;
   flex-flow: column;
   margin-left: 1.2rem;
 }
 
+.product img {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem ;
+    object-fit: contain;
+    height: 60px;
+    width: auto;
+}
+
 .product h4 {
   font-size: 1.5rem;
-  color: #ce512b;
+  font-weight: bolder;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  color: #444444;
+  line-height: 1.8rem;
 }
 
 .product ul {
-  text-align: left;
-  font-size: 0.75rem;
-  list-style: disc;
-  line-height: 1.2;
-  padding-left: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.25rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: bolder;
+  color:#35703b;
 }
 
 .product .commission {
-  color: #d9001b;
+  color: #D9001B;
   font-size: 1.25rem;
   font-weight: 1000;
-  margin-bottom: 10px;
+  margin-bottom: 1.2rem;
   margin-top: auto;
+  line-height: 1.5rem;
 }
 
 .product .goto {
-  font-size: 0.75rem;
-  max-width: 100%;
-  line-height: 30px;
-  margin-top: auto;
+  margin: auto auto 0;
+  font-size: 1rem;
+  font-weight: 1000;
+  max-width: 90%;
+  line-height: 1.5rem;
   background: #d9001b;
-  color: white;
-  border-radius: 20px;
-  padding: 10px 0;
+  color: #fff;
+  border-radius: 60px;
+  padding: 0.4rem 1.1rem;
+  text-align: center;
 }
 
 .go-to {
   width: 33%;
-  font-size: 2rem;
-  line-height: 30px;
-  margin-top: auto;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   background: #d9001b;
-  color: white;
-  border-radius: 30px;
+  color: #fff;
+  font-weight: 1000;
+  border-radius: 60px;
   padding: 10px 0;
   text-align: center;
   margin: 0 auto;
-  border: 6px solid #fff;
+  margin-top: auto;
+  border: 5px solid #FFF8DC;
 }
 
 /* footer區 */
@@ -188,20 +211,24 @@ footer img {
   right: 0;
   top: 25%;
   width: 3rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #35703b;
+  padding: 5px 0;
   border-radius: 10px 0 0 10px;
 }
 
-/* 手機板下方導覽列 */
 .aside-menu li a {
+  color: #FFF8DC;
+  font-weight: bolder;
+  line-height: 20px;
   padding: 5px;
   text-align: center;
 }
 
 .aside-menu li a:hover {
-  color: orange;
+  color: #FFE4B5;
 }
 
+/* 手機板下方導覽列 */
 .mobile-menu {
   position: fixed;
   width: 100%;
@@ -229,30 +256,75 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
+  html{
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .wrapper >img {
+    margin-bottom: 2rem;
+  }
+
   .navigation {
     display: none;
   }
 
   .products-wrap {
-    border-radius: 0;
+    border-radius: 20px;
   }
 
   .products-wrap h2 {
     font-size: 2rem;
     line-height: 70px;
-	}
-	
-	.go-to{
-		width:80%;
-	}
-
-  .commission {
-    font-size: 1rem;
   }
 
+  .limited-time,
+  .coupon,
+  .christmas-choice {
+    background: url("../images/禮物.png") no-repeat bottom, #35703b;
+    background-size: contain;
+  }
+
+  .products-wrap .product-title {
+    width: 75%;
+  }
+  
+  .product img {
+    width: 80%;
+    margin: 0 auto 0.8rem ;
+  }
+
+  .product h4 {
+    font-size: 1.35rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .product ul {
+    font-size: 0.5rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+
+  .product .commission {
+    margin: 0.8rem auto;
+  }
+	
+	.go-to{
+    height: 80%;
+    width:60%;
+	}
+
   .product {
-    width: 45%;
-    margin: 2%;
+    width: 46%;
+    margin: 2% 2%;
+    border-radius: 20px;
   }
 
   footer {
