@@ -32,7 +32,7 @@ body {
 body {
   height: 100%;
   background: #2b0e0c;
-  font-family: Arial, Microsoft JhengHei, PingFang, sans-serif;
+  font-family: "jf-jinxuanlatte", Microsoft JhengHei, PingFang, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -141,7 +141,7 @@ body {
 
 .product h4 {
   font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: 700;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
   color: #444444;
@@ -154,14 +154,14 @@ body {
   line-height: 1.25rem;
   margin-top: 0.2rem;
   margin-bottom: 0.8rem;
-  font-weight: bolder;
+  font-weight: 600;
   color:#35703b;
 }
 
 .product .commission {
   color: #D9001B;
   font-size: 1.25rem;
-  font-weight: 1000;
+  font-weight: 900;
   margin-bottom: 1.2rem;
   margin-top: auto;
   line-height: 1.5rem;
@@ -170,7 +170,7 @@ body {
 .product .goto {
   margin: auto auto 0;
   font-size: 1rem;
-  font-weight: 1000;
+  font-weight: 800;
   max-width: 90%;
   line-height: 1.5rem;
   background: #d9001b;
@@ -186,7 +186,7 @@ body {
   line-height: 1.5rem;
   background: #d9001b;
   color: #fff;
-  font-weight: 1000;
+  font-weight: 800;
   border-radius: 60px;
   padding: 10px 0;
   text-align: center;
@@ -218,7 +218,7 @@ footer img {
 
 .aside-menu li a {
   color: #FFF8DC;
-  font-weight: bolder;
+  font-weight: 700;
   line-height: 20px;
   padding: 5px;
   text-align: center;
@@ -247,7 +247,7 @@ footer img {
 }
 
 .mobile-menu ul li a {
-  font-weight: bolder;
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.6rem;
   padding: 0.8rem;
