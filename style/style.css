@@ -178,6 +178,7 @@ body {
   border-radius: 60px;
   padding: 0.4rem 1.1rem;
   text-align: center;
+  transition: all .3s;
 }
 
 .go-to {
@@ -193,6 +194,7 @@ body {
   margin: 0 auto;
   margin-top: auto;
   border: 5px solid #FFF8DC;
+  transition: all .3s;
 }
 
 /* footer區 */
