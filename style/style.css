@@ -286,7 +286,7 @@ footer img {
   .limited-time,
   .coupon,
   .christmas-choice {
-    background: url("../images/禮物.png") no-repeat bottom, #35703b;
+    background: url("../images/mobile_present.png") no-repeat bottom, #35703b;
     background-size: contain;
   }
 
